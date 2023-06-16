@@ -1,0 +1,15 @@
+i want to make a program that will take images as input and the results or output are the keywords of the images. this program will combine both reinforcement learning and reference-based long short term memory (R-LSTM) as its algorithm
+
+Sure, I can help you with that. Here is a high-level overview of the steps you could take to create such a program:
+
+    First, you need to train a model that can recognize objects and features in the images. You can use a pre-trained model such as VGG, ResNet, or Inception, or train your own model using a dataset such as ImageNet or COCO.
+
+    Once you have a model that can recognize objects and features, you need to extract the features from the images. You can use the last layer of the pre-trained model as feature extraction or use a technique like principal component analysis (PCA) to reduce the dimensionality of the features.
+
+    You can then use a reference-based LSTM (R-LSTM) to generate keywords based on the extracted features. An R-LSTM is a type of LSTM that is trained on pairs of images and captions, where the image is used as the reference for the caption. The R-LSTM learns to generate captions that describe the differences between the reference image and the input image.
+
+    You can use reinforcement learning to train the R-LSTM to generate better captions. In reinforcement learning, the algorithm learns through trial and error by receiving rewards for generating good captions and penalties for generating bad ones. You can define the reward function based on how well the generated caption matches the actual keywords of the image.
+
+    Finally, you can test the program on new images and evaluate its performance using metrics such as BLEU, ROUGE, and CIDEr.
+
+This is just a high-level overview, and the implementation details may vary depending on the specific requirements of your program. Let me know if you have any questions or need more help with the implementation.
